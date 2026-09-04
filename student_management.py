@@ -37,8 +37,21 @@ def search_student():
             print("Course:", student["course"])
             return
 
-    print("Student not found.")
+    print("Student not def update_student():
+    name = input("Enter student name to update: ")
 
+    for student in students:
+        if student["name"].lower() == name.lower():
+            print("\nStudent found!")
+
+            student["name"] = input("Enter new name: ")
+            student["age"] = input("Enter new age: ")
+            student["course"] = input("Enter new course: ")
+
+            print("Student updated successfully!")
+            return
+
+    print("Student not found.")
 
 def main():
     while True:
